@@ -1,5 +1,5 @@
 Package.describe({
-    name: 'unirio-login',
+    name: 'diogommartins:unirio-login',
     version: '0.0.1',
     // Brief, one-line summary of the package.
     summary: 'Plug and play modal login for UNIRIO LDAP',
@@ -27,11 +27,4 @@ Package.onUse(function(api) {
     api.addFiles(['lib/login-server.js'], 'server');
 
     api.export('LDAP_DEFAULTS', 'server');
-});
-
-Package.onTest(function(api) {
-    api.use('ecmascript');
-    api.use('tinytest');
-    api.use('unirio-login');
-    api.mainModule('unirio-login-tests.js');
 });

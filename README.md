@@ -8,11 +8,11 @@ Modulo provê integração com login LDAP e o template reativo ```{{> UnirioModa
 meteor add diogommartins:unirio-login
 ```
 
-Registre um helper `displayName` que servirá como resolvedor de nome a ser exibido para usuário logado. Caso contrário, `username` será exibido.
+Registre um helper `nickname` que servirá como resolvedor de nome a ser exibido para usuário logado. Caso contrário, `username` será exibido.
 
 ```
 Meteor.users.helpers({
-    displayName: function(){
+    nickname: function(){
         return "John Doe";
     }
 })

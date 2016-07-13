@@ -1,6 +1,6 @@
 Package.describe({
     name: 'diogommartins:unirio-login',
-    version: '0.0.1',
+    version: '0.0.2',
     // Brief, one-line summary of the package.
     summary: 'Plug and play modal login for UNIRIO LDAP',
     // URL to the Git repository containing the source code for this package.
@@ -14,7 +14,8 @@ Package.onUse(function(api) {
     api.versionsFrom('1.3.2.4');
     api.use(['meteor-base', 'templating']);
     // Meteor.loginWithLDAP
-    api.use("jquery", 'client');
+    api.use('twbs:bootstrap', 'client');
+    api.use('jquery', 'client');
     api.use("typ:accounts-ldap@1.0.0");
 
     api.imply(['accounts-base', 'accounts-password', 'typ:accounts-ldap'], ['client', 'server']);
@@ -28,3 +29,7 @@ Package.onUse(function(api) {
 
     api.export('LDAP_DEFAULTS', 'server');
 });
+
+//Npm.depends({
+//    'unirio-api': '1.0.2'
+//});

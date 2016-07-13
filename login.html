@@ -1,12 +1,10 @@
 <template name="UnirioModalLogin">
     {{#unless currentUser}}
-        <li>
-            <button type="button" class="btn btn-primary navbar-btn navbar-right login-button " data-toggle="modal" data-target="#login-modal">Login</button>
-        </li>
+        <button type="button" class="btn btn-primary navbar-btn navbar-right login-button " data-toggle="modal" data-target="#login-modal">Login</button>
     {{else}}
         <li class="dropdown">
             <button class="btn btn-primary navbar-btn navbar-right dropdown-toggle" type="button" id="dropdownMenuLoggedIn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                {{currentUser.displayName}}
+                {{nickname}}
                 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
@@ -105,7 +103,6 @@
 
                 </div>
                 <!-- End # DIV Form -->
-
             </div>
         </div>
     </div>

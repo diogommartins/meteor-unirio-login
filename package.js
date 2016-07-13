@@ -14,7 +14,7 @@ Package.onUse(function(api) {
     api.versionsFrom('1.3.2.4');
     api.use(['meteor-base', 'templating']);
     // Meteor.loginWithLDAP
-    api.use('twbs:bootstrap', 'client');
+    api.use('twbs:bootstrap@3.3.6', 'client');
     api.use('jquery', 'client');
     api.use("typ:accounts-ldap@1.0.0");
 

@@ -1,6 +1,6 @@
 # Meteor unirio-login
 
-Modulo provê integração com login LDAP e o template reativo ```{{> UnirioModalLogin}}``. Configurações podem ser sobrescritas no servidor através de `LDAP_DEFAULTS.url` e `LDAP_DEFAULTS.dsn`. 
+Modulo provê integração com login LDAP e o template reativo ```{{> UnirioLogin}}``. Configurações podem ser sobrescritas no servidor através de `LDAP_DEFAULTS.url` e `LDAP_DEFAULTS.dsn`. 
 
 ## Instalação
 

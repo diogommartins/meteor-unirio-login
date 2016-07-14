@@ -1,4 +1,5 @@
 <template name="UnirioLogin">
+    {{#unless currentUser}}
     <main>
         <div class="mdl-grid principal">
             <div class="mdl-cell mdl-cell--2-col"></div>
@@ -45,4 +46,7 @@
         </div><!--cell8-col-->
         <div class="mdl-cell mdl-cell--2-col"></div>
     </main>
+    {{else}}
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored logout-button">Logout</button>
+    {{/unless}}
 </template>

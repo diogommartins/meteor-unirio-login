@@ -1,6 +1,6 @@
 Package.describe({
     name: 'diogommartins:unirio-login',
-    version: '0.0.3',
+    version: '0.0.5',
     // Brief, one-line summary of the package.
     summary: 'Plug and play modal login for UNIRIO LDAP',
     // URL to the Git repository containing the source code for this package.
